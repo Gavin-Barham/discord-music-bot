@@ -20,4 +20,4 @@ bot = commands.Bot(command_prefix='!', intents=intents, help_command=None)
 async def on_ready():
     await bot.add_cog(help_cog(bot))
     await bot.add_cog(music_cog(bot))
-bot.run('MTA3NDM2ODAwNjYzOTA3MTI1NQ.GJ9eGj.Xnnj_wTP8rlCfos-aA8lFWsSzTJXUOo9Hyk1Wc')
+bot.run(os.environ.get('TOKEN'))
